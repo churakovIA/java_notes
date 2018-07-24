@@ -31,6 +31,7 @@ String[] list(FilenameFilter filter) | возвращает файлы ограниченные **filter** 
 File[] listFiles() | Возвращает массив файлов, которые содержатся в директории, которой является текущий объект-файл.
 File[] listFiles(FileFilter filter) | **FileFilter** - функ.интерфейс `boolean accept(File pathname)`
 File[] listFiles(FilenameFilter filter) | Возвращает массив файлов, которые содержатся в директории, которой является текущий объект-файл, ограниченные **filter**
+
 **Вывести на экран список всех файлов, которые находятся в определенной директории**
 ```java
 File folder = new File("c:/path/");
