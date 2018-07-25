@@ -1,6 +1,22 @@
-﻿# Ввод и вывод. Класс [**java.nio.file.Files**][1]
+# Ввод и вывод. Класс [**java.nio.file.Files**][1]
 
 Этот класс состоит исключительно из статических методов для операций с файлами, каталогами или другими типами файлов.
+
+**Чтение и запись данных в файлы**
+
+Метод | Применение | Описание
+--- | --- | ---
+*Читают содержимое файла* |  | 
+static byte[] readAllBytes (Path path) | String content = new String(bytes, charset) | 
+static List<String> readAllLines(Path path, Charset charset) | |
+*Записывают заданное содержимое в файл и возвращают **path** как путь к нему* |  | 
+static Path write(Path path, byte[] contents, OpenOption... options) | Files.write(path, content.getBytes(charset)) |   
+static Path write(Path path, Iterable<? extends CharSequence> contents, OpenOption options) |  |  
+*Открывают файл для чтения или записи* |  | 
+static InputStream newInputStream (Path path, OpenOption.. . options) | |   
+static OutputStream newOutputStream (Path path, OpenOption. . . options) | |   
+static BufferedReader newBufferedReader(Path path, Charset charset) | |   
+static BufferedWriter newBufferedWriter(Path path, Charset charset, OpenOption... options) | |  
 
 **Создание файлов и каталогов**
 
@@ -54,7 +70,7 @@ Object fileKey() |
 ---
 
 **Cтандартные параметры для операций с файлами** 
->[**StandardOpenOption**][2] - применяется в потоках ввода-вывода типа newBufferedWriter, newInputStream, newOutputStream для операции записи
+>[**enum StandardOpenOption**][2] - применяется в потоках ввода-вывода типа `newBufferedWriter`, `newInputStream`, `newOutputStream` для операции записи
 
 Значение | Описание
 --- | ---
@@ -68,10 +84,23 @@ DELETE_ON_CLOSE |  Удалить файл наилучшим образом п�
 SPARSE | Указать файловой системе, что этот файл окажется разреженным
 DSYNC\|SYNC |  Потребовать, чтобы при каждом обновлении файла данные и метаданные синхронно записывались на запоминающем устройстве
 
+>[**enum StandardCopyOption**][3] - применяется в операциях копирования и перемещения
 
-Метод | Применение | Описание
---- | --- | ---
- |  | 
- 
+Значение | Описание
+--- | ---
+ATOMIC_MOVE | Переместить файл атомарно 
+COPY_ATTRIBUTES | Скопировать атрибуты файла 
+REPLACE_EXISTING | Заменить целевой файл, если он существует
+
+>[**enum LinkOption**][4] - применяется во всех упомянутых выше методах, а также в методах `exists()`, `isDirectory()`, `isRegularFile()`
+
+Значение | Описание
+--- | ---
+NOFOLLOW_LINKS | He следовать по символическим ссылкам FileVisitOption; применяется в методах `find()`, `walk()`, `walkFileTree()` 
+FOLLOW_LINKS | Следовать по символическим ссылкам 
+
  [1]: https://docs.oracle.com/javase/8/docs/api/java/nio/file/Files.html
  [2]: https://docs.oracle.com/javase/8/docs/api/java/nio/file/StandardOpenOption.html
+ [3]: https://docs.oracle.com/javase/8/docs/api/java/nio/file/StandardCopyOption.html
+ [4]: https://docs.oracle.com/javase/8/docs/api/java/nio/file/LinkOption.html
+ 
