@@ -5,4 +5,4 @@
 [java.nio.file.Path](/IO/java.nio.file.Path.md) - интерфейс описывает путь к файлу и используется во многих методах манипулирования файлами\
 [java.nio.file.Files](/IO/java.nio.file.Files.md) - класс состоит исключительно из статических методов для операций с файлами, каталогами или другими типами файлов\
 [Иерархия классов Reader и Writer](/IO/ClassHierarchyReaderWriter.PNG)\
-[Иерархия классов InputStream и OutputStream](/IO/ClassHierarchyReaderWriter.PNG)
+[Иерархия классов InputStream и OutputStream](/IO/ClassHierarchyInputStreamOutputStream.PNG)
