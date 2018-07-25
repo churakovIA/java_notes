@@ -1,35 +1,35 @@
-# Ввод и вывод. Класс [**java.nio.file.Files**][1]
+п»ї# Р’РІРѕРґ Рё РІС‹РІРѕРґ. РљР»Р°СЃСЃ [**java.nio.file.Files**][1]
 
-Этот класс состоит исключительно из статических методов для операций с файлами, каталогами или другими типами файлов.
+Р­С‚РѕС‚ РєР»Р°СЃСЃ СЃРѕСЃС‚РѕРёС‚ РёСЃРєР»СЋС‡РёС‚РµР»СЊРЅРѕ РёР· СЃС‚Р°С‚РёС‡РµСЃРєРёС… РјРµС‚РѕРґРѕРІ РґР»СЏ РѕРїРµСЂР°С†РёР№ СЃ С„Р°Р№Р»Р°РјРё, РєР°С‚Р°Р»РѕРіР°РјРё РёР»Рё РґСЂСѓРіРёРјРё С‚РёРїР°РјРё С„Р°Р№Р»РѕРІ.
 
-**Создание файлов и каталогов**
+**РЎРѕР·РґР°РЅРёРµ С„Р°Р№Р»РѕРІ Рё РєР°С‚Р°Р»РѕРіРѕРІ**
 
-Метод | Применение | Описание
+РњРµС‚РѕРґ | РџСЂРёРјРµРЅРµРЅРёРµ | РћРїРёСЃР°РЅРёРµ
 --- | --- | ---
-static Path createFile(Path path, FileAttribute<?>... attrs) | Files.createFile(path) | Создать файл  
-static Path createDirectory(Path path, FileAttribute<?>... attrs) | Files.createDirectory(path) | Создать каталог  
-static Path createDirectories(Path path, FileAttribute<?>... attrs) | Files.createDirectories(path) | создает также любые промежуточные каталоги
-static Path createTempFile (String prefix, String suffix, FileAttribute<?>.. . attrs) | Files.createTempFile (null, " .txt") | Создать временный файл  
-static Path createTempFile (Path parentDir, String prefix, String suffix, FileAttribute<?>... attrs) |  | в заданном родительском каталоге 
-static Path createTempDirectory (String prefix, FileAttribute<?>. . . attrs) |  | Создать временный каталог 
-static Path createTempDirectory (Path parentDir, String prefix, FileAttribute<?>.. . attrs) |  | в заданном родительском каталоге
+static Path createFile(Path path, FileAttribute<?>... attrs) | Files.createFile(path) | РЎРѕР·РґР°С‚СЊ С„Р°Р№Р»  
+static Path createDirectory(Path path, FileAttribute<?>... attrs) | Files.createDirectory(path) | РЎРѕР·РґР°С‚СЊ РєР°С‚Р°Р»РѕРі  
+static Path createDirectories(Path path, FileAttribute<?>... attrs) | Files.createDirectories(path) | СЃРѕР·РґР°РµС‚ С‚Р°РєР¶Рµ Р»СЋР±С‹Рµ РїСЂРѕРјРµР¶СѓС‚РѕС‡РЅС‹Рµ РєР°С‚Р°Р»РѕРіРё
+static Path createTempFile (String prefix, String suffix, FileAttribute<?>.. . attrs) | Files.createTempFile (null, " .txt") | РЎРѕР·РґР°С‚СЊ РІСЂРµРјРµРЅРЅС‹Р№ С„Р°Р№Р»  
+static Path createTempFile (Path parentDir, String prefix, String suffix, FileAttribute<?>... attrs) |  | РІ Р·Р°РґР°РЅРЅРѕРј СЂРѕРґРёС‚РµР»СЊСЃРєРѕРј РєР°С‚Р°Р»РѕРіРµ 
+static Path createTempDirectory (String prefix, FileAttribute<?>. . . attrs) |  | РЎРѕР·РґР°С‚СЊ РІСЂРµРјРµРЅРЅС‹Р№ РєР°С‚Р°Р»РѕРі 
+static Path createTempDirectory (Path parentDir, String prefix, FileAttribute<?>.. . attrs) |  | РІ Р·Р°РґР°РЅРЅРѕРј СЂРѕРґРёС‚РµР»СЊСЃРєРѕРј РєР°С‚Р°Р»РѕРіРµ
 
-**Копирование, перемещение и удаление файлов**
+**РљРѕРїРёСЂРѕРІР°РЅРёРµ, РїРµСЂРµРјРµС‰РµРЅРёРµ Рё СѓРґР°Р»РµРЅРёРµ С„Р°Р№Р»РѕРІ**
 
-Метод | Применение | Описание
+РњРµС‚РѕРґ | РџСЂРёРјРµРЅРµРЅРёРµ | РћРїРёСЃР°РЅРёРµ
 --- | --- | ---
-static Path copy(Path from, Path to, CopyOption... options) | Files.copy(fromPath, toPath, StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.COPY_ATTRIBUTES) | Скопировать файл
-static Path move(Path from, Path to, CopyOption... options) | Files.move(fromPath, toPath, StandardCopyOption.ATOMIC_MOVE) | Переместить файл. Возвращает целевой путь.
-static long copy (Inputs tream from, Path to, CopyOption... options)  |  | Копируют данные в файл из потока ввода
-static long copy (Path frcm, OutputStream to, CopyOption... options) |  | Копируют данные из файла в потока ввода, возвращая количество скопированных байтов.
-static void delete(Path path) | Files.delete(path) | Удаляют заданный файл или пустой каталог. Исключение, если не существует.
-static boolean deletelfExists(Path path) | boolean deleted = Files.deletelfExists(path) | Вернет ложь, если не существует.
+static Path copy(Path from, Path to, CopyOption... options) | Files.copy(fromPath, toPath, StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.COPY_ATTRIBUTES) | РЎРєРѕРїРёСЂРѕРІР°С‚СЊ С„Р°Р№Р»
+static Path move(Path from, Path to, CopyOption... options) | Files.move(fromPath, toPath, StandardCopyOption.ATOMIC_MOVE) | РџРµСЂРµРјРµСЃС‚РёС‚СЊ С„Р°Р№Р». Р’РѕР·РІСЂР°С‰Р°РµС‚ С†РµР»РµРІРѕР№ РїСѓС‚СЊ.
+static long copy (Inputs tream from, Path to, CopyOption... options)  |  | РљРѕРїРёСЂСѓСЋС‚ РґР°РЅРЅС‹Рµ РІ С„Р°Р№Р» РёР· РїРѕС‚РѕРєР° РІРІРѕРґР°
+static long copy (Path frcm, OutputStream to, CopyOption... options) |  | РљРѕРїРёСЂСѓСЋС‚ РґР°РЅРЅС‹Рµ РёР· С„Р°Р№Р»Р° РІ РїРѕС‚РѕРєР° РІРІРѕРґР°, РІРѕР·РІСЂР°С‰Р°СЏ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРєРѕРїРёСЂРѕРІР°РЅРЅС‹С… Р±Р°Р№С‚РѕРІ.
+static void delete(Path path) | Files.delete(path) | РЈРґР°Р»СЏСЋС‚ Р·Р°РґР°РЅРЅС‹Р№ С„Р°Р№Р» РёР»Рё РїСѓСЃС‚РѕР№ РєР°С‚Р°Р»РѕРі. РСЃРєР»СЋС‡РµРЅРёРµ, РµСЃР»Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚.
+static boolean deletelfExists(Path path) | boolean deleted = Files.deletelfExists(path) | Р’РµСЂРЅРµС‚ Р»РѕР¶СЊ, РµСЃР»Рё РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚.
  
-**Получение сведений о файлах**
+**РџРѕР»СѓС‡РµРЅРёРµ СЃРІРµРґРµРЅРёР№ Рѕ С„Р°Р№Р»Р°С…**
 
- Метод | Описание
+ РњРµС‚РѕРґ | РћРїРёСЃР°РЅРёРµ
 --- | ---
-*Проверяют заданное свойство файла по указанному пути* | 
+*РџСЂРѕРІРµСЂСЏСЋС‚ Р·Р°РґР°РЅРЅРѕРµ СЃРІРѕР№СЃС‚РІРѕ С„Р°Р№Р»Р° РїРѕ СѓРєР°Р·Р°РЅРЅРѕРјСѓ РїСѓС‚Рё* | 
 static boolean exists(Path path) |  
 static boolean isHidden(Path path) |  
 static boolean isReadable (Path path) |  
@@ -38,10 +38,10 @@ static boolean isExecutable(Path path) |
 static boolean isRegularFile(Path path) |  
 static boolean isDirectory(Path path) |  
 static boolean isSymbolicLink(Path path) |  
-static long size(Path path) | Получает размер файла в байтах
-*Читает атрибуты файла, относящиеся к типу А* | 
+static long size(Path path) | РџРѕР»СѓС‡Р°РµС‚ СЂР°Р·РјРµСЂ С„Р°Р№Р»Р° РІ Р±Р°Р№С‚Р°С…
+*Р§РёС‚Р°РµС‚ Р°С‚СЂРёР±СѓС‚С‹ С„Р°Р№Р»Р°, РѕС‚РЅРѕСЃСЏС‰РёРµСЃСЏ Рє С‚РёРїСѓ Рђ* | 
 A readAttributes(Path path, Class<A> type, LinkOption... options) | BasicFileAttributes attributes = files.readAttributes(path, BasicFileAttributes.class);	PosixFileAttributes attributes = files.readAttributes(path, PosixFileAttributes.class); 
-*Получают запрашиваемый атрибут файла* | 
+*РџРѕР»СѓС‡Р°СЋС‚ Р·Р°РїСЂР°С€РёРІР°РµРјС‹Р№ Р°С‚СЂРёР±СѓС‚ С„Р°Р№Р»Р°* | 
 FileTime creationTime() |  
 FileTime lastAccessTime() |  
 FileTime lastMbdifiedTime() |  
@@ -53,14 +53,14 @@ Object fileKey() |
 
 ---
 
-**Cтандартные параметры для операций с файлами** 
->[**StandardOpenOption**][2] - применяется в потоках ввода-вывода типа newBufferedWriter, newInputStream, newOutputStream для операции записи
+**CС‚Р°РЅРґР°СЂС‚РЅС‹Рµ РїР°СЂР°РјРµС‚СЂС‹ РґР»СЏ РѕРїРµСЂР°С†РёР№ СЃ С„Р°Р№Р»Р°РјРё** 
+>[**StandardOpenOption**][2] - РїСЂРёРјРµРЅСЏРµС‚СЃСЏ РІ РїРѕС‚РѕРєР°С… РІРІРѕРґР°-РІС‹РІРѕРґР° С‚РёРїР° newBufferedWriter, newInputStream, newOutputStream РґР»СЏ РѕРїРµСЂР°С†РёРё Р·Р°РїРёСЃРё
 
 ```java
 public enum StandardOpenOption extends Enum<StandardOpenOption> implements OpenOption`
 ```
 
- Метод | Применение | Описание
+ РњРµС‚РѕРґ | РџСЂРёРјРµРЅРµРЅРёРµ | РћРїРёСЃР°РЅРёРµ
 --- | --- | ---
  |  | 
  
