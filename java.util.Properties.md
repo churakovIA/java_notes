@@ -15,7 +15,7 @@ prop.store(new FileOutputStream("my.properties"), null);
 
 **Загрузить из файла**
 ```java
-prop.load(new FileInputStream(my.properties));
+prop.load(new FileInputStream("my.properties"));
 //получить значение свойства
 String ArchiveName = prop.getProperty("ArchiveName");
 //вывести в консоль все свойства
