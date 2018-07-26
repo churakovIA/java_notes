@@ -33,4 +33,28 @@ String getProperty(String key) |  Возвращает значение свой
 String getProperty(String key, String defaultValue) |  Возвращает значение свойства по ключу или defaultValue, если такого ключа нет.
 Set<String> stringPropertyNames() |  Возвращает список всех ключей
 
+### Чтение системных настроек
+
+```java
+System.getProperties().list(System.out); // вывод в консоль системных properties
+String uDir = System.getProperty("user.dir"); // получить системное свойство
+```
+
+Свойство | Описание
+--- | ---
+user.dir |  Текущий рабочий каталог для данной виртуальной машины
+user.home |  Начальный каталог пользователя
+user.name |  Наименование учетной записи пользователя
+java.version |  Исполняемая версия Java для данной виртуальной машины
+java.home |  Начальный каталог установки Java
+java.class.path |  Путь к файлу класса, с помощью которого была запущена данная виртуальная машина
+java.io.tmpdir |  Каталог для хранения временных файлов [например, /tmp)
+os.name |  Наименование операционной системы (например, Linux)
+os.arch |  Архитектура операционной системы (например, amd64)
+os.version |  Версия операционной системы (например, 3.13.0-34-generic)
+file.separator |  Разделитель файлов (знак / в Unix, знак \ в Windows)
+path.separator |  Разделитель путей к файлам (знак : в Unix, знак ; в Windows) |  еще: java.io.File.separator
+line.separator |  Разделитель новых строк (знаки \n в Unix, знаки \r\n в Windows)
+
+
 [1]: https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html
