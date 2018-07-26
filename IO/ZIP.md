@@ -28,6 +28,7 @@ try(ZipInputStream zip = new ZipInputStream(new FileInputStream("archive.zip")))
     }
 }
 ```
+---
 [ZipFile][4] - This class is used to read entries from a zip file.
 [Примеры использования][5]
 ```java
