@@ -28,7 +28,19 @@ try(ZipInputStream zip = new ZipInputStream(new FileInputStream("archive.zip")))
     }
 }
 ```
+[ZipFile][4] - This class is used to read entries from a zip file.
+[Примеры использования][5]
+```java
+//создать можно по строке или объекту File
+ZipFile zipFile = new ZipFile("archive.zip");
+//получить запись по имени
+ZipEntry entry = zipFile.getEntry("project/readme.txt");
+//извлечь файл из архива
+Files.copy(zipFile.getInputStream(entry), Paths.get("e:/Short-term storage/" + entry.getName()));
+```
 
 [1]: https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipInputStream.html
 [2]: https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipOutputStream.html
 [3]: https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipEntry.html
+[4]: https://docs.oracle.com/javase/8/docs/api/java/util/zip/ZipFile.html
+[5]: http://tutorials.jenkov.com/java-zip/zipfile.html
