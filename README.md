@@ -7,4 +7,5 @@
 [java.nio.file.Path](/IO/java.nio.file.Path.md) - интерфейс описывает путь к файлу и используется во многих методах манипулирования файлами\
 [java.nio.file.Files](/IO/java.nio.file.Files.md) - класс состоит исключительно из статических методов для операций с файлами, каталогами или другими типами файлов\
 [java.util.zip](/IO/java.util.zip.md) - классы для потокового чтения/записи в zip-архив *ZipFile*, *ZipEntry*, *ZipOutputStream*, *ZipInputStream*\
+----
 [java.util.Properties](java.util.Properties.md) - класс сохранения и загрузки настроек программы
