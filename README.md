@@ -13,6 +13,10 @@
 
 ---
 
+[java.io.StringReader java.io.StringWriter](/IO/java.io.StringReaderWriter.md) - классы для потокового чтения/записи символов из строки
+
+---
+
 [java.io.RandomAccessFile](/IO/java.io.RandomAccessFile.md) - класс с поддержкой запросов на позиционирование, что позволяет установить указатель файла на любой позиции в пределах этого файла
 
 ---
