@@ -13,4 +13,8 @@
 
 ---
 
+[java.io.RandomAccessFile](/IO/java.io.RandomAccessFile.md) - класс с поддержкой запросов на позиционирование, что позволяет установить указатель файла на любой позиции в пределах этого файла
+
+---
+
 [java.util.Properties](java.util.Properties.md) - класс сохранения и загрузки настроек программы
