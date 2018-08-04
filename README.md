@@ -1,5 +1,4 @@
-# java_notes
-Заметки по Java
+# java_notes - заметки по Java
 ### Ввод / вывод
 [Иерархия классов Reader и Writer](/IO/ClassHierarchyReaderWriter.PNG)\
 [Иерархия классов InputStream и OutputStream](/IO/ClassHierarchyInputStreamOutputStream.PNG)
@@ -23,6 +22,10 @@
 ---
 
 [java.io.ByteArrayInput(Output)Stream](/IO/java.io.ByteArrayByteArrayInputOutputStream.md) - ввод-вывод байтов в\из массива byte[]
+
+---
+
+[java.io.PrintStream](/IO/java.io.PrintStream.md) - форматированный вывод
 
 ---
 
