@@ -29,4 +29,8 @@
 
 ---
 
+[java.lang.reflect](/java.lang.reflect.md) - рефлексия. Прокси-классы.
+
+---
+
 [java.util.Properties](java.util.Properties.md) - класс сохранения и загрузки настроек программы
