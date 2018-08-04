@@ -41,4 +41,7 @@ System.out.printf("%s = %8.2f\n", "Result: ", 1000.0/3.0); // Result:  =   333,3
 System.out.printf("Я %1$s %1$s %2$s %2$s", "два раза", "не повторяю"); // Я два раза два раза не повторяю не повторяю
 ```
 
+[Доп. инфо][2]
+
 [1]: https://docs.oracle.com/javase/8/docs/api/java/io/PrintStream.html
+[2]: https://metanit.com/java/tutorial/6.6.php
