@@ -22,4 +22,8 @@
 
 ---
 
+[java.io.ByteArrayByteArrayInput(Output)Stream](/IO/java.io.ByteArrayByteArrayInputOutputStream.md) - ввод-вывод байтов в\из массива byte[]
+
+---
+
 [java.util.Properties](java.util.Properties.md) - класс сохранения и загрузки настроек программы
