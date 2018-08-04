@@ -34,3 +34,7 @@
 ---
 
 [java.util.Properties](java.util.Properties.md) - класс сохранения и загрузки настроек программы
+
+---
+
+[RMI](/RMI.md) - удаленный вызов процедур
