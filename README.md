@@ -22,7 +22,7 @@
 
 ---
 
-[java.io.ByteArrayByteArrayInput(Output)Stream](/IO/java.io.ByteArrayByteArrayInputOutputStream.md) - ввод-вывод байтов в\из массива byte[]
+[java.io.ByteArrayInput(Output)Stream](/IO/java.io.ByteArrayByteArrayInputOutputStream.md) - ввод-вывод байтов в\из массива byte[]
 
 ---
 
