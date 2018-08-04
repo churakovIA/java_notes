@@ -13,7 +13,7 @@
 
 ---
 
-[java.io.StringReader java.io.StringWriter](/IO/java.io.StringReaderWriter.md) - классы для потокового чтения/записи символов из строки
+[java.io.StringReader java.io.StringWriter](/IO/java.io.StringReaderWriter.md) - классы для потокового чтения/записи символов из строки\
 [java.io.BufferedReader java.io.BufferedWriter](/IO/java.io.BufferedReaderWriter.md) - буферизированный ввод-вывод символов
 
 ---
