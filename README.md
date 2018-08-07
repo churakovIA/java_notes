@@ -38,3 +38,7 @@
 ---
 
 [RMI](/RMI.md) - удаленный вызов процедур
+
+## JavaScript
+
+[Основы синтаксиса javascript](/javascript/jsSyntax.md)
