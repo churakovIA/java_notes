@@ -41,4 +41,5 @@
 
 ## JavaScript
 
-[Основы синтаксиса javascript](/javascript/jsSyntax.md)
+[Основы синтаксиса javascript](/javascript/jsSyntax.md)\
+[Nashorn - интерпритатор javascript](/javascript/Nashorn.md)
