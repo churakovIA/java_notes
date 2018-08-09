@@ -37,6 +37,11 @@ mapper.writeValue(writer, myResultObject);
 ---
 
 ## Аннотации
+
+[Полный список jackson аннотаций][4]\
+[Простые примеры jackson аннотаций][5]
+
+
 Аннотация | Описание
 --- | ---
 @JsonAutoDetect | Ставится перед классом. | Помечает класс как готовый к сериализациив JSON.
@@ -108,3 +113,5 @@ class House
 [1]: https://github.com/FasterXML/jackson-databind/wiki
 [2]: http://fasterxml.github.io/jackson-databind/javadoc/2.9/com/fasterxml/jackson/databind/ObjectMapper.html
 [3]: https://github.com/FasterXML/jackson-databind
+[4]: https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations
+[5]: https://github.com/FasterXML/jackson-annotations
