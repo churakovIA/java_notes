@@ -1,5 +1,8 @@
 # Jackson - фрейворк для работы с json
 Класс [ObjectMapper (com.fasterxml.jackson.databind.ObjectMapper)][2] обеспечивает сериализация/десериализацию json.
+```java
+ObjectMapper mapper = new ObjectMapper();
+```
 
 ## Пример класса для сериализации в json
 - поля должны быть видимые: или public или иметь getter’ы и setter’ы
@@ -14,6 +17,16 @@ public class MyValue {
 ```
 
 ## Десериализация JSON
+
+### Десериализация объекта из файла
+```java
+public static <T> T convertFromJsonToNormal(String fileName, Class<T> clazz) throws IOException {
+    ObjectMapper mapper = new ObjectMapper();
+    return mapper.readValue(new File(fileName), clazz);
+}
+```
+
+### Десериализация из разных источников
 ```java
 MyValue value = mapper.readValue(new File("data.json"), MyValue.class);
 // or:
@@ -22,7 +35,7 @@ value = mapper.readValue(new URL("http://some.com/api/entry.json"), MyValue.clas
 value = mapper.readValue("{\"name\":\"Bob\", \"age\":13}", MyValue.class);
 ```
 
-## Сериализация JSON
+## Сериализация json
 ```java
 mapper.writeValue(new File("result.json"), myResultObject);
 // or:
@@ -32,6 +45,16 @@ String jsonString = mapper.writeValueAsString(myResultObject);
 // or:
 StringWriter writer = new StringWriter();
 mapper.writeValue(writer, myResultObject);
+```
+
+### Форматировать выходной json
+```java
+System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(raceBike));
+//{
+//    "name" : "Simba",
+//    "owner" : "Peter",
+//    "age" : 2
+//}
 ```
 
 ---
@@ -102,7 +125,10 @@ class House
 }
 ```
 
-
+### Отключить использование аннотаций
+```java
+mapper.disable(MapperFeature.USE_ANNOTATIONS);
+```
 ---
 
 ## Дополнительный материал
