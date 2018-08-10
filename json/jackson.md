@@ -62,7 +62,8 @@ System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(ra
 ## Аннотации
 
 [Полный список jackson аннотаций][4]\
-[Простые примеры jackson аннотаций][5]
+[Простые примеры jackson аннотаций][5]\
+[Javadocs 2.9][6]
 
 
 Аннотация | Описание
@@ -141,3 +142,4 @@ mapper.disable(MapperFeature.USE_ANNOTATIONS);
 [3]: https://github.com/FasterXML/jackson-databind
 [4]: https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations
 [5]: https://github.com/FasterXML/jackson-annotations
+[6]: http://fasterxml.github.io/jackson-annotations/javadoc/2.9
