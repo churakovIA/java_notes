@@ -100,6 +100,42 @@ class Cat{
 }
 ```
 
+### @JsonFormat
+Используется для указания способа форматирования полей и/или свойств для вывода JSON.
+В частности, эта аннотация позволяет указать, как форматировать значения даты и календаря в соответствии с форматом `SimpleDateFormat`.
+```java
+@JsonFormat(pattern = "dd-MM-yyyy hh:mm:ss")
+public Date eventDate;
+//"eventDate" : "10-08-2018 13:04:46"
+```
+
+### @JsonAnyGetter
+Этой аннотацией помечается геттер возвращающий `map`, чтобы ее элементы возвращались как свойства объекта.
+```java
+@JsonAnyGetter
+public Map<String, Object> getAdditionalMap() {
+    return additionalMap;
+}
+//без аннотации: 
+//{
+//  "id" : 1,
+//  "name" : "first",
+//  "additionalMap" : {
+//    "KEY#1" : "VALUE#1",
+//    "KEY#3" : "VALUE#3",
+//    "KEY#2" : "VALUE#2"
+//  }
+//}
+//с аннотацией:
+//{
+//    "id" : 1,
+//    "name" : "first",
+//    "KEY#1" : "VALUE#1",
+//    "KEY#3" : "VALUE#3",
+//    "KEY#2" : "VALUE#2"
+//}
+```
+
 ### Пример аннотации, которая позволяет управлять процессом «полиморфной десериализации»
 ```java
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property="type")
