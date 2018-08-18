@@ -67,6 +67,9 @@ public static void main(String[] args) throws JAXBException
 
 ## Аннотации
 
+https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/package-frame.html
+https://docs.oracle.com/javase/8/docs/api/javax/xml/bind/annotation/adapters/package-frame.html
+
 Аннотация | Применение | Описание
 -- | -- | --
 @XmlRootElement | class, enum | указывает на то, что этот объект может быть «корнем дерева» элементов в XML. Т.е. быть элементом самого верхнего уровня, все остальные элементы лежат в нем.
