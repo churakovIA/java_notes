@@ -1,7 +1,7 @@
 # База знаний
 ## Вопросы для подготовки к собеседованиям
 
-1. [Java core](Assessment/1-java-core.md)
+1. :point_right:[Java core](Assessment/1-java-core.md)
 2. [Multithreading](Assessment/2-multithreading.md)
 3. [Databases](Assessment/3-databases.md)
 4. [Clean code, Patterns](Assessment/4-patterns.md)
