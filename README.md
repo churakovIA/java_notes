@@ -3,7 +3,7 @@
 
 1. :point_right:[Java core](Assessment/1-java-core.md)
 2. :point_right:[Multithreading](Assessment/2-multithreading.md)
-3. [Databases](Assessment/3-databases.md)
+3. :point_right:[Databases](Assessment/3-databases.md)
 4. [Clean code, Patterns](Assessment/4-patterns.md)
 
 ## Java core
