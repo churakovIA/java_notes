@@ -4,4 +4,5 @@
 - [Вопросы на собеседовании Java Junior Developer (jsehelper.blogspot.com)](https://jsehelper.blogspot.com/p/sitemap.html)
 - [GitHub: Список полезных ссылок для Java программиста](https://github.com/Vedenin/useful-java-links/tree/master/link-rus)
 - [Техническое собеседование на позицию Java-разработчик](https://javaops.ru/view/test)
+- [Habr: План подготовки к собеседованию на позицию Java разработчика](https://habr.com/ru/post/473872/)
 
