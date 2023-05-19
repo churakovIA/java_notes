@@ -1,4 +1,5 @@
 # База знаний
+
 ## Вопросы для подготовки к собеседованиям
 
 1. :point_right:[Java core](Assessment/1-java-core.md)
@@ -7,6 +8,10 @@
 4. :point_right:[Clean code, Patterns](Assessment/4-patterns.md)
 
 [Ссылки](links.md)
+
+## Конспекты книг
+
+- [Программист-фанатик (*Passionate Programmer*) Чед Фаулер](/book-summaries/passionate-programmer-chad-fowler.md)
 
 ## Java core
 
@@ -21,7 +26,6 @@
 - [java.nio.file.Path](/IO/java.nio.file.Path.md) - интерфейс описывает путь к файлу и используется во многих методах манипулирования файлами\
 - [java.nio.file.Files](/IO/java.nio.file.Files.md) - класс состоит исключительно из статических методов для операций с файлами, каталогами или другими типами файлов\
 - [java.util.zip](/IO/java.util.zip.md) - классы для потокового чтения/записи в zip-архив *ZipFile*, *ZipEntry*, *ZipOutputStream*, *ZipInputStream*
-
 
 ---
 
