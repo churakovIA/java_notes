@@ -14,6 +14,7 @@
 - [Программист-фанатик (*Passionate Programmer*) Чед Фаулер](/book-summaries/passionate-programmer-chad-fowler.md)
 - [Чистый код - создание, анализ и рефакторинг, 2011, (Роберт Мартин)](/book-summaries/clean-code-robert-martin.md)
 - [Принципы юнит-тестирования, 2021, (Хориков Владимир)](/book-summaries/principles-ut-khorikov.md)
+- [Паттерны проектирования. Приемы объектно-ориентированного проектирования, (Гамма, Хелм, Джонсон, Влиссидес)](/book-summaries/patterns-gof.md)
 
 ## Java core
 
